@@ -1,0 +1,10 @@
+<div id="menu_bar">
+    <ul>
+        {% if user.is_authenticated %}
+            <li><a href="{% url charts.views.charts %}">My Charts</a></li>
+            <li><a href="{% url django.contrib.auth.views.logout %}">Log out</a></li>
+        {% else %}
+            <li><a href="{% url django.contrib.auth.views.login %}">Log in</a></li>
+        {% endif %}
+    </ul>
+</div>

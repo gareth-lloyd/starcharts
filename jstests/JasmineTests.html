@@ -1,0 +1,32 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+  "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <title>Jasmine Test Runner</title>
+  <link rel="stylesheet" type="text/css" href="jasmine/lib/jasmine-1.0.2/jasmine.css">
+  <script type="text/javascript" src="jasmine/lib/jasmine-1.0.2/jasmine.js"></script>
+  <script type="text/javascript" src="jasmine/lib/jasmine-1.0.2/jasmine-html.js"></script>
+
+  <!-- include source files here... -->
+  <script src="../jslib/mootools.js" type="text/javascript"></script>
+  <script src="../jslib/mootools-more.js" type="text/javascript"></script>
+  <script src="../jslib/mooml.js" type="text/javascript"></script>
+  <script type="text/javascript" src="../charts/static/js/charts.js"></script>
+  <script type="text/javascript" src="../charts/static/js/graph.js"></script>
+  <script type="text/javascript" src="../charts/static/js/add-chart.js"></script>
+
+  <!-- include spec files here... -->
+  <script type="text/javascript" src="chart-tests.js"></script>
+  <script type="text/javascript" src="add-chart-tests.js"></script>
+  <script type="text/javascript" src="graph-tests.js"></script>
+
+</head>
+<body>
+
+<script type="text/javascript">
+  jasmine.getEnv().addReporter(new jasmine.TrivialReporter());
+  jasmine.getEnv().execute();
+</script>
+
+</body>
+</html>

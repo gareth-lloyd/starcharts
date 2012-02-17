@@ -1,0 +1,7 @@
+cd /srv
+git clone git@github.com:gareth-lloyd/Starchart.git
+mv /srv/Starchart /srv/starchart
+
+virtualenv --no-site-packages /srv/starchart-venv
+source /srv/starchart-venv/bin/activate
+/srv/starchart-venv/bin/pip install -r /srv/starchart/requirements.txt

@@ -1,0 +1,39 @@
+<html>
+<head>
+    <title>{% block head_title %}Starchart{% endblock %}</title>
+
+    <script src="{{ STATIC_URL }}js/lib/mootools.js" type="text/javascript"></script>
+    <script src="{{ STATIC_URL }}js/lib/mootools-more.js" type="text/javascript"></script>
+    <script src="{{ STATIC_URL }}js/lib/mooml.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        window.STATIC = "{{ STATIC_URL }}";
+    </script>
+    
+    {% block media %}{% endblock %}
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/main.css" />
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+                <div id="banner">
+                        {% block banner %}<!-- default banner -->{% endblock %}
+                </div>
+                {% include 'menu_bar.html' %}
+        </div>
+
+        <div id="messages">
+            {% if messages %}
+                <ul>
+                     {% for message in messages %}
+                        <li>{{ message }}</li>
+                     {% endfor %}
+                </ul>
+            {% endif %}
+        </div>
+
+        {% block content %}
+            Welcome to starcharts
+        {% endblock %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+[
+    {
+        "pk": 1, 
+        "model": "auth.user", 
+        "fields": {
+            "username": "test", 
+            "first_name": "", 
+            "last_name": "", 
+            "is_active": true, 
+            "is_superuser": true, 
+            "is_staff": true, 
+            "last_login": "2011-04-13 12:33:25", 
+            "groups": [], 
+            "user_permissions": [], 
+            "password": "sha1$acc2c$f85ee55c4cab349182b2c232fe8651b351c50623",
+            "email": "test@gmail.com", 
+            "date_joined": "2010-09-11 09:16:02"
+        }
+    },
+    {
+        "pk": 1, 
+        "model": "charts.chart", 
+        "fields": {
+            "noun": "meetings", 
+            "target": 1.0, 
+            "variable_achievements": false, 
+            "created": "2010-09-29 05:22:28", 
+            "target_operator": "M", 
+            "accumulation_period": "W", 
+            "verb": "attend", 
+            "user": 1
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "charts.chart", 
+        "fields": {
+            "noun": "calories", 
+            "target": 2100.0, 
+            "variable_achievements": true, 
+            "created": "2010-09-29 05:22:28", 
+            "target_operator": "L", 
+            "accumulation_period": "D", 
+            "verb": "eat", 
+            "user": 1
+        }
+    }, 
+    {
+        "pk": 39, 
+        "model": "charts.checkin", 
+        "fields": {
+            "when": "2010-10-26", 
+            "chart": 1, 
+            "number": 1, 
+            "created": "2010-10-26 06:08:21"
+        }
+    }, 
+    {
+        "pk": 38, 
+        "model": "charts.checkin", 
+        "fields": {
+            "when": "2010-10-24", 
+            "chart": 1, 
+            "number": 1, 
+            "created": "2010-10-26 06:08:06"
+        }
+    }, 
+    {
+        "pk": 22, 
+        "model": "charts.checkin", 
+        "fields": {
+            "when": "2010-10-17", 
+            "chart": 1, 
+            "number": 1, 
+            "created": "2010-10-18 05:25:11"
+        }
+    }, 
+    {
+        "pk": 21, 
+        "model": "charts.checkin", 
+        "fields": {
+            "when": "2010-10-12", 
+            "chart": 1, 
+            "number": 1, 
+            "created": "2010-10-12 05:46:28"
+        }
+    }
+]

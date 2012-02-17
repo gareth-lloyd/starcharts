@@ -1,0 +1,7 @@
+*.pyc
+local_settings.py
+*.swp
+mocks/
+notes/
+static
+jslib

@@ -1,0 +1,18 @@
+# linux defaults to sh shell, so specify bash
+useradd -m -s “/bin/bash” webapps
+
+visudo # add webapps
+
+##log in as webapps
+mkdir /home/webapps/.ssh
+vim /home/webapps/.ssh/authorized_keys
+## copy in public key for webapps access
+## copy git key to .ssh/id_rsa
+
+#package list:
+sudo apt-get install nginx python-pip mysql libmysqlclient15-dev python-dev
+
+#python initial packages
+pip install virtualenv
+
+sudo chown webapps:webapps /srv
